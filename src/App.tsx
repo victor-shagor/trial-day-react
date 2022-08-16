@@ -49,6 +49,7 @@ const App = () => {
       <div className="App">
         {statuses.map((status) => (
           <StatusCard
+            key={status.title}
             title={status.title}
             status={status.status}
             applicants={applicants}

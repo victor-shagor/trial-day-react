@@ -34,6 +34,7 @@ const StatusCard = ({
           .filter((el) => el.status === status)
           .map((app) => (
             <Card
+              key={app.id}
               id={app.id}
               name={app.name}
               age={app.age}
